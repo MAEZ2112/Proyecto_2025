@@ -1,0 +1,543 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+.nuestro_equipo_trabajo {
+    background-color: var(--black-color-light);
+
+    h1 {
+        color: var(--buttom-color);
+    }
+
+    a {
+        text-align: center;
+    }
+
+    @media (min-width: #breaks[desktop]) {
+        position: relative;
+        overflow: hidden;
+        height: 70vh;
+
+        h1 {
+            position: relative;
+            display: flex;
+            font-style: bolder;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            top: 43%;
+            left: -26.5%;
+            font-size: 300%;
+        }
+
+        a {
+            position: relative;
+            display: flex;
+            color: var(--white-color);
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            top: 45%;
+            left: 3.5%;
+            font-size: 120%;
+            width: 40%;
+        }
+
+        img {
+            display: flex;
+            align-self: center;
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            transform: translate(100%, -8%);
+        }
+    }
+
+    @media (max-width: #breaks[tablet]) {
+        text-align: center;
+        padding: 20px 30px;
+        margin-top: 50px;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        a {
+            font-size: 1rem;
+            color: var(--white-color);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin: 15px 0;
+        }
+    }
+
+    @media (max-width: #breaks[mobile]) {
+        text-align: center;
+        margin-top: 15%;
+        padding: 20px 10px;
+
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        a {
+            font-size: 0.7rem;
+        }
+
+        img {
+            width: 95%;
+            margin: 10px 0;
+        }
+    }
+}
+
+.fundador {
+    background-color: var(--black-color);
+
+    .imagen_fundador {
+        align-items: center;
+        background-color: var(--white-color);
+
+        ul.lista_fundador {
+            color: var(--black-color-light);
+            list-style-type: circle;
+        }
+
+    }
+
+    .titulo_fundador {
+        color: var(--white-color);
+        background-color: var(--buttom-color);
+    }
+
+    @media (min-width: #breaks[desktop]) {
+        position: relative;
+        overflow: hidden;
+        height: 80vh;
+
+        h2 {
+            position: relative;
+            display: flex;
+            color: var(--black-color);
+            font-style: bolder;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            top: 22%;
+            left: 14%;
+            font-size: 300%;
+            color: var(--black-color);
+            z-index: 1;
+        }
+
+        .titulo_fundador {
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            height: 45px;
+            width: 235px;
+            font-size: 130%;
+            font-weight: bold;
+            transform: translate(275%, 70%);
+        }
+
+        .imagen_fundador {
+            position: relative;
+            display: inline-flex;
+            align-self: center;
+            height: 420px;
+            width: 1200px;
+            transform: translate(15%, 10%);
+            border-style: solid;
+            border-color: var(--buttom-color);
+            border-radius: 7px;
+
+            img {
+                display: flex;
+                align-self: center;
+                position: absolute;
+                height: 380px;
+                transform: translate(7%, -1%);
+                border-radius: 7px;
+                box-shadow: 3px 3px 10px var(--black-color-lighten);
+            }
+
+            ul.lista_fundador {
+                position: absolute;
+                justify-content: center;
+                align-items: center;
+                height: 45px;
+                width: 600px;
+                font-size: 130%;
+                font-weight: bold;
+                transform: translate(85%, -180%);
+                line-height: 2.0;
+            }
+        }
+    }
+
+    @media (max-width: #breaks[tablet]) {
+        padding: 20px 15px;
+
+        h2 {
+            font-size: 1.2rem;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-top: 20px;
+            color: var(--white-color);
+        }
+
+        .imagen_fundador {
+            display: flex;
+            flex-direction: column;
+            border-radius: 7px;
+            padding: 15px;
+            border: 1px solid var(--buttom-color);
+
+            img {
+                width: 90%;
+                height: auto;
+                border-radius: 7px;
+                box-shadow: 3px 3px 10px var(--black-color-lighten);
+            }
+
+            ul.lista_fundador {
+                font-size: 1rem;
+                line-height: 1.6;
+                padding: 10px;
+            }
+        }
+
+        .titulo_fundador {
+            font-size: 1.2rem;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            margin-left: 42%;
+        }
+    }
+
+    @media (max-width: #breaks[mobile]) {
+        padding: 20px 10px;
+
+        h2 {
+            font-size: 1rem;
+            text-align: center;
+            color: var(--white-color);
+        }
+
+        .imagen_fundador {
+            width: 100%;
+            transform: none;
+            display: block;
+            margin: 10px auto;
+
+            img {
+                width: 90%;
+                margin-left: 5%;
+            }
+
+            ul.lista_fundador {
+                width: 80%;
+                font-size: 0.7rem;
+                line-height: 1.5;
+                text-align: left;
+                margin-left: 35px;
+                margin-top: 10px;
+            }
+        }
+
+        .titulo_fundador {
+            text-align: center;
+            font-size: 1rem;
+            margin-left: 100px;
+            color: var(--white-color);
+        }
+    }
+}
+
+.equipo_trabajo {
+    background-color: var(--black-color-light);
+
+    .titulo_equipo {
+        color: var(--white-color);
+        background-color: var(--buttom-color);
+    }
+
+    .card_integrante {
+        background-color: var(--white-color);
+        border-radius: 7px;
+
+        img {
+            border-radius: 7px;
+            box-shadow: 3px 3px 10px var(--black-color-lighten);
+        }
+
+        a {
+            color: var(--black-color-light);
+        }
+
+        ul.lista_equipo {
+            color: var(--black-color-light);
+            list-style-type: circle;
+        }
+    }
+
+    @media (min-width: #breaks[desktop]) {
+        position: relative;
+        overflow: hidden;
+        height: 165vh;
+
+        .titulo_equipo {
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            height: 45px;
+            width: 435px;
+            font-size: 130%;
+            font-weight: bold;
+            transform: translate(125%, 70%);
+        }
+
+        .integrantes_equipo {
+            .card_integrante {
+                position: relative;
+                display: inline-flex;
+                align-items: center;
+                margin: 30px 70px;
+                align-self: center;
+                height: 400px;
+                width: 325px;
+                transform: translate(17%, 25%);
+                border-style: solid;
+                border-color: var(--buttom-color);
+
+
+                a {
+                    margin: 10rem auto;
+                    transform: translate(0%, 265%);
+                    font-size: 110%;
+                    font-style: bolder;
+                }
+
+                .lista_equipo {
+                    position: absolute;
+                    justify-content: center;
+                    align-items: center;
+                    height: 45px;
+                    width: 250px;
+                    font-size: 75%;
+                    font-weight: bold;
+                    transform: translate(20%, 240%);
+                    line-height: 1.5;
+                }
+
+                img {
+                    display: flex;
+                    align-self: center;
+                    position: absolute;
+                    height: 200px;
+                    width: 220px;
+                    transform: translate(24%, -75px);
+                }
+
+                .btn_contactanos {
+                    border-style: solid;
+                    border-color: black;
+                    align-self: center;
+                    position: absolute;
+                    height: 200px;
+                    width: 220px;
+                    transform: translate(24%, -75px);
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: #breaks[tablet]) {
+        padding: 20px 10px;
+
+        .titulo_equipo {
+            font-size: 1.2rem;
+            padding: 10px;
+            text-align: center;
+            border-radius: 7px;
+        }
+
+        .card_integrante {
+            margin: 20px 0;
+            border: 1px solid var(--buttom-color);
+            padding: 15px;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            a {
+                font-size: 1rem;
+                font-weight: bold;
+                display: block;
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            ul.lista_equipo {
+                font-size: 0.9rem;
+                line-height: 1.4;
+                padding: 10px;
+            }
+        }
+    }
+
+    @media (max-width: #breaks[mobile]) {
+        height: auto;
+        padding: 10px;
+
+        .titulo_equipo {
+            font-size: 1rem;
+            margin-left: 0%;
+            height: 50px;
+            text-align: center;
+            padding: 6px;
+            border-radius: 7px;
+        }
+
+        .card_integrante {
+            width: 100%;
+            height: 150%;
+            margin: 15px 0px;
+            border-style: solid;
+            border-color: var(--buttom-color);
+
+
+            img {
+                width: 90%;
+                height: auto;
+                margin: 10px auto;
+                margin-left: 5%;
+            }
+
+            a {
+                font-size: 0.98rem;
+                position: relative;
+                margin-left: 15px;
+                color: var(--buttom-color);
+            }
+
+            ul.lista_equipo {
+                width: 90%;
+                font-size: 0.75rem;
+                line-height: 1.5;
+                padding: 10px;
+                margin-left: 25px;
+            }
+        }
+    }
+}
+
+.contactanos {
+    background-color: var(--white-color);
+
+    .btn_contactanos {
+        color: var(--white-color);
+        background-color: var(--buttom-color);
+        display: flex;
+    }
+
+    @media (min-width: #breaks[desktop]) {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        height: 70px;
+        width: 700px;
+        font-size: 130%;
+        font-weight: bold;
+        transform: translate(59%, 180%);
+
+
+        .mensaje_contactanos {
+            display: flex;
+            position: relative;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            justify-self: center;
+            height: 45px;
+            width: 470px;
+            font-size: 80%;
+            font-weight: bold;
+            transform: translate(-22%, 0%);
+        }
+
+        .btn_contactanos {
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            height: 35px;
+            width: 150px;
+            font-size: 90%;
+            font-weight: bold;
+            transform: translate(160%, 0%);
+            border-radius: 5px;
+        }
+    }
+
+    @media (max-width: #breaks[tablet]) {
+        padding: 50px;
+        text-align: center;
+        border-radius: 7px;
+        margin-top: 20px;
+
+        .mensaje_contactanos {
+            display: flex;
+            font-size: 1rem;
+            color: var(--black-color-light);
+            padding-bottom: 20px;
+        }
+
+        .btn_contactanos {
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            transform: translate(165%, 10%);
+            width: 150px;
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: #breaks[mobile]) {
+        height: 23.5vh;
+        width: 100%;
+        padding: 20px 10px;
+        text-align: center;
+        border-radius: 7px;
+
+        .mensaje_contactanos {
+            font-size: 0.9rem;
+            width: 100%;
+            color: var(--black-color-light);
+        }
+
+        .btn_contactanos {
+            position: absolute;
+            font-size: 0.8rem;
+            padding: 10px 10px;
+            margin-top: 10px;
+            transform: translate(43%, -45%);
+            border-radius: 5px;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+.btn-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    background-color: #f8d97a;
+    color: var(--body-color);
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color .3s;
+
+    @media (max-width: #breaks[tablet]) {
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        padding: .5rem 1rem;
+    }
+}
