@@ -1,0 +1,277 @@
+.hero-panel {
+
+    position: relative;
+    overflow: hidden;
+    background-color: #0e0e2d;
+    height: 55vh;
+
+    @media (max-width: #breaks[tablet]) {
+        height: 40vh;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transform: translate(0%, -20%);
+        opacity: 0.5;
+
+        @media (max-width: #breaks[mobile]){
+            height: 50vh;
+            width: 100%;
+            transform: translate(0%, 0%);
+        }
+    }
+
+    .fondo_oscuro {
+        position: absolute;
+        background-color: rgba(14, 14, 45, 0.6);
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+}
+
+.hero-content {
+    font-size: xx-large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2.5rem 4rem;
+    border-radius: 20px;
+    text-align: center;
+    color: var(--white-color);
+    max-width: 90%;
+    width: 1400px;
+    z-index: 2;
+
+
+    h1 {
+        margin-top: 2rem;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+
+        @media (max-width: #breaks[tablet]) {
+            font-size: 2.5rem;
+        }
+
+        @media (max-width: #breaks[mobile]) {
+            font-size: 1.2rem;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        font-weight: 400;
+        line-height: 1.5;
+
+        @media (max-width: #breaks[tablet]) {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width: #breaks[mobile]) {
+            font-size: 0.7rem;
+        }
+    }
+}
+
+.testimonios {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: var(--black-color-lighten);
+
+    .titulo-principal {
+        font-size: 2.5rem;
+        color: var(--buttom-color);
+        margin-bottom: 10px;
+        font-weight: 600;
+
+        @media (max-width: #breaks[tablet]) {
+            font-size: 2rem;
+        }
+    }
+
+    .subtitulo {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: var(--white-color);
+        font-style: italic;
+
+        @media (max-width: #breaks[tablet]) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .descripcion {
+        font-size: 1rem;
+        margin-bottom: 40px;
+        color: #ccc;
+
+        @media (max-width: #breaks[tablet]) {
+            font-size: 0.9rem;
+        }
+    }
+
+    .contenedor-testimonios {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .tarjeta-testimonio {
+            background-color: var(--white-color);
+            color: #000;
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transition: transform 0.3s ease;
+
+            @media (max-width: #breaks[tablet]) {
+                max-width: 90%;
+            }
+
+            :hover {
+                transform: translateY(-10px);
+            }
+
+            .nombre {
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .titulo-trabajo {
+                font-style: italic;
+                margin-bottom: 15px;
+                font-size: 0.9rem;
+                color: #555;
+            }
+
+            .comentario {
+                font-size: 0.9rem;
+                margin-bottom: 15px;
+                color: #333;
+            }
+
+            .estrellas {
+                font-size: 1.2rem;
+                color: var(--buttom-color);
+            }
+        }
+    }
+}
+
+.casos-exito {
+    background-color: #0e0e2d;
+    color: var(--white-color);
+    padding: 50px 20px;
+    text-align: center;
+
+    @media (max-width: #breaks[tablet]) {
+        padding: 30px 10px;
+    }
+
+    .contenedor {
+        .titulo-principal {
+            font-size: 2.5rem;
+            color: var(--buttom-color);
+            margin-bottom: 10px;
+            font-weight: 600;
+
+            @media (max-width: #breaks[tablet]) {
+                font-size: 2rem;
+            }
+        }
+
+        .descripcion {
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 40px;
+
+            @media (max-width: #breaks[tablet]) {
+                font-size: 1rem;
+                align-self: center;
+            }
+        }
+
+        .contenedor-casos {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+
+            .caso {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                background-color: var(--white-color);
+                color: #000;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                max-width: 800px;
+                width: 100%;
+                transition: transform 0.3s ease;
+
+                :hover {
+                    transform: translateY(-5px);
+                }
+
+                @media (max-width: #breaks[tablet]) {
+                    flex-direction: column;
+                    max-width: 90%;
+                }
+
+                .imagen-caso {
+                    width: 30%;
+                    height: auto;
+                    object-fit: cover;
+
+                    @media (max-width: #breaks[tablet]) {
+                        width: 100%;
+                        height: 200px;
+                    }
+                }
+
+                .contenido-caso {
+                    padding: 20px;
+                    text-align: left;
+                    width: 70%;
+
+                    @media (max-width: #breaks[tablet]) {
+                        width: 100%;
+                    }
+
+                    .titulo-caso {
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        margin-bottom: 10px;
+
+                        @media (max-width: #breaks[tablet]) {
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    .descripcion-caso {
+                        font-size: 1rem;
+                        color: #333;
+                        margin-bottom: 10px;
+                        line-height: 1.5;
+
+                        @media (max-width: #breaks[tablet]) {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
