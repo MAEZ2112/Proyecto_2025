@@ -4,11 +4,11 @@
     background-color: var(--black-color);
     height: 55vh;
 
-    @media (max-width: #breaks[tablet]){
+    @media (max-width: #breaks[tablet]) {
         height: 45vh;
     }
 
-    @media (max-width: #breaks[mobile]){
+    @media (max-width: #breaks[mobile]) {
         height: 35vh;
         width: 335px;
     }
@@ -79,10 +79,11 @@
             }
         }
 
-        h1{
+        h1 {
             @media (max-width: #breaks[mobile]) {
                 font-size: 1.4rem;
-                margin-top: 0.7rem;;
+                margin-top: 0.7rem;
+                ;
             }
         }
     }
@@ -175,13 +176,13 @@
         padding: 1em 0;
     }
 
-    p{
+    p {
         @media (max-width: #breaks[mobile]) {
             font-size: 0.8rem;
         }
     }
 
-    h2{
+    h2 {
         @media (max-width: #breaks[mobile]) {
             font-size: 1.5rem;
             margin: 1rem;
@@ -195,6 +196,7 @@
         margin: 0 auto;
         background-color: var(--black-color-lighten);
     }
+
     .slider-container {
         .card-wrapper {
             .card-list {
@@ -208,19 +210,20 @@
                 align-items: center;
 
                 .card-item {
-                    flex: 1 1 calc(25% - 20px); /* Ajusta las cards para ocupar el 25% del contenedor menos el espaciado */
+                    flex: 1 1 calc(25% - 20px);
+                    /* Ajusta las cards para ocupar el 25% del contenedor menos el espaciado */
                     max-width: 400px;
 
                     @media (max-width: #breaks[tablet]) {
                         flex: 1 1 calc(50% - 20px);
-                        max-width: 350px; 
+                        max-width: 350px;
                     }
 
                     @media (max-width: #breaks[mobile]) {
                         flex: 1 1 calc(100% - 20px);
-                        max-width: 335px; 
+                        max-width: 335px;
                     }
-                    
+
                     .card-link {
                         width: 400px;
                         display: block;
@@ -232,7 +235,7 @@
                         box-shadow: 0 10px 10px rgba(217, 217, 217, 0.1);
                         transition: 0.2s ease;
 
-                        :hover{
+                        :hover {
                             border-color: #b6b6b6;
                         }
 
@@ -252,7 +255,7 @@
                             box-shadow: 0 5px 5px rgba(217, 217, 217, 0.1);
                         }
 
-                        .card-image{
+                        .card-image {
                             width: 100%;
                             aspect-ratio: 16/9;
                             object-fit: cover;
@@ -266,7 +269,7 @@
 
                         }
 
-                        .badge{
+                        .badge {
                             color: rgb(40, 40, 95);
                             padding: 8px 16px;
                             font-size: 0.95rem;
@@ -284,7 +287,7 @@
                             }
                         }
 
-                        .card-title{
+                        .card-title {
                             font-size: 1.19rem;
                             color: var(--white-color);
                             font-weight: 500;
@@ -297,7 +300,7 @@
 
                         }
 
-                        .card-button{
+                        .card-button {
                             height: 55px;
                             width: 105px;
                             border-radius: 15%;
@@ -318,7 +321,7 @@
                             }
                         }
 
-                        .card-button:hover{
+                        .card-button:hover {
                             background-color: var(--buttom-color);
                             color: var(--black-color);
                         }
@@ -329,13 +332,13 @@
     }
 }
 
-.porque-elegirnos{
+.porque-elegirnos {
 
     display: flex;
     justify-content: space-between;
     padding: 2rem;
     margin: auto;
-    background-color: hsl(0, 0%, 100%); 
+    background-color: hsl(0, 0%, 100%);
     color: var(--white-color);
     flex-wrap: wrap;
     background-color: var(--black-color-light);
@@ -356,7 +359,7 @@
         border-radius: none;
     }
 
-    .left-column{
+    .left-column {
         flex: 1;
         padding: 1rem;
         background-color: var(--white-color);
@@ -373,7 +376,7 @@
             padding: 0.5rem;
         }
 
-        .btn{
+        .btn {
             background-color: var(--buttom-color);
             color: var(--black-color-lighten);
             padding: 0.5rem 1rem;
@@ -388,13 +391,13 @@
                 font-size: 0.8rem;
             }
 
-            &:hover{
+            &:hover {
                 background-color: var(--black-color-lighten);
                 color: var(--white-color);
-            }   
+            }
         }
 
-        p{
+        p {
             font-size: 1.1rem;
             color: var(--black-color-lighten);
             margin-top: 0.5rem;
@@ -409,30 +412,30 @@
             }
         }
 
-        h2{
+        h2 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
             color: var(--buttom-color);
-            
+
             @media (max-width: #breaks[tablet]) {
                 font-size: 1.2rem;
             }
-            
+
         }
     }
 
-    .right-column{
+    .right-column {
         flex: 2;
         display: grid;
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
         padding: 1rem;
 
         @media (max-width: #breaks[mobile]) {
-            grid-template-columns: 1fr; 
+            grid-template-columns: 1fr;
         }
 
-        .block{
+        .block {
             background-color: var(--black-color);
             padding: 1rem;
             border-radius: 8px;
@@ -441,9 +444,9 @@
                 padding: 0.5rem;
             }
 
-            h3{
+            h3 {
                 margin-bottom: 0.5rem;
-                color: var(--buttom-color);    
+                color: var(--buttom-color);
             }
         }
     }
