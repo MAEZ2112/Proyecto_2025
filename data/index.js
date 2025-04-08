@@ -1,6 +1,7 @@
 import { indexPage } from "./pages/indexPage";
 import { serviciosPage } from "./pages/serviciosPage.js"
 import { requisitosPage } from "./pages/requisitosPage.js";
+import { testimoniosPage } from "./pages/testimoniosPage.js";
 
 
 const commonData = {
@@ -29,7 +30,11 @@ export const getPageContext = (pagePath) => {
         case '/main/recursos_legales/requisitos.html':
             pageData = requisitosPage
             break;
-            
+
+        case '/main/testimonios/testimonios.html':
+            pageData = testimoniosPage
+            break;
+
         default:
             break;
     }
