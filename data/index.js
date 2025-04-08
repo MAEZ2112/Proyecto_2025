@@ -1,5 +1,7 @@
 import { indexPage } from "./pages/indexPage";
 import { serviciosPage } from "./pages/serviciosPage.js"
+import { requisitosPage } from "./pages/requisitosPage.js";
+
 
 const commonData = {
     navigation: [
@@ -22,6 +24,10 @@ export const getPageContext = (pagePath) => {
 
         case '/main/servicios/servicios.html':
             pageData = serviciosPage
+            break;
+        
+        case '/main/recursos_legales/requisitos.html':
+            pageData = requisitosPage
             break;
             
         default:
