@@ -26,6 +26,3 @@ valueDisplays.forEach((valueDisplay) => {
     }
   }, duration);
 });
-
-
-
