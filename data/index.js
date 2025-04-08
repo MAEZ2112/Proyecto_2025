@@ -1,4 +1,5 @@
 import { indexPage } from "./pages/indexPage";
+import { serviciosPage } from "./pages/serviciosPage.js"
 
 const commonData = {
     navigation: [
@@ -10,12 +11,19 @@ const commonData = {
 }
 
 export const getPageContext = (pagePath) => {
+    console.log('Rendering:', pagePath); // <--- esto
+
     let pageData = {};
 
     switch (pagePath) {
-        case '../index.html':
+        case 'index.html':
             pageData = indexPage
             break;
+
+        case '/main/servicios/servicios.html':
+            pageData = serviciosPage
+            break;
+            
         default:
             break;
     }
