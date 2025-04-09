@@ -1,5 +1,4 @@
 export const contactoPage = {
-  tituloFormulario: "Mándanos un mensaje",  
   campos_cont: [
       {
         tipo: "text",
