@@ -6,27 +6,25 @@
 
 <head>
 
-    <meta charset="utf-8" />
+   <meta charset="utf-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-    <!--=============== REMIXICONS ===============-->
-
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 
-    <!--=============== LESS ===============-->
+   <!--=============== REMIXICONS ===============-->
 
-    <base href="/proyecto_web">
-
-    <link rel="stylesheet" href="less/main.less" />
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
 
 
-    <title>Bufete Notarial Valladares Guifarro</title>
+   <!--=============== LESS ===============-->
+
+
+   <link rel="stylesheet" href="../../less/main.less" />
+
+
+   <title>Bufete Notarial Valladares Guifarro</title>
 
 </head>
 
@@ -34,125 +32,126 @@
 
 <body>
 
-    {{> header}}
+   {{> header}}
 
-    <!--=============== MAIN ===============-->
+   <!--=============== MAIN ===============-->
 
-    <main>
+   <main>
 
-        <section class="hero-panel">
+      <section class="hero-panel">
 
-            <picture>
+         <picture>
 
-               <img src="img/IMAGEN_FONDO_SERVICIOS.jpg" alt="Nuestros Servicios">                    
+            <img src="img/IMAGEN_FONDO_SERVICIOS.jpg" alt="Nuestros Servicios">
 
-           </picture>
+         </picture>
 
-           <a class="fondo_oscuro"></a>
+         <a class="fondo_oscuro"></a>
 
-           <div class="hero-content">
+         <div class="hero-content">
 
-               <h1>NUESTROS </h1>
+            <h1>NUESTROS </h1>
 
-               <i class="ri-auction-fill"></i>
+            <i class="ri-auction-fill"></i>
 
-               <h1>SERVICIOS</h1>
+            <h1>SERVICIOS</h1>
 
-          </section>
-
-
-
-          <section class="estadisticas">
-
-            <div class="wrapper">
-
-               
-
-               {{> cartas_contador }}
+      </section>
 
 
 
-          </section>
+      <section class="estadisticas">
+
+         <div class="wrapper">
 
 
 
-          <section>
-
-            <div class="intro-servicios">
-
-               <h2>¿Cómo podemos ayudarte?</h2>
-
-               <p>En el Bufete Valladares Guifarro, priorizamos las necesidades
-
-                  de nuestros clientes, por lo que ofrecemos una amplia gama de servicios
-
-                  notariales y legales para satisfacer sus necesidades.</p>
-
-               </p>
-
-            </div>
-
-          </section>
+            {{> cartas_contador }}
 
 
 
-          <section class="carrusel">
+      </section>
 
-            <div class="slider-container">
 
-               <div class="card-wrapper">
 
-                  <ul class="card-list">
+      <section>
 
-                     {{> cartas_servicios }}
+         <div class="intro-servicios">
 
-                  </ul>
+            <h2>¿Cómo podemos ayudarte?</h2>
 
-               </div>
+            <p>En el Bufete Valladares Guifarro, priorizamos las necesidades
+
+               de nuestros clientes, por lo que ofrecemos una amplia gama de servicios
+
+               notariales y legales para satisfacer sus necesidades.</p>
+
+            </p>
+
+         </div>
+
+      </section>
+
+
+
+      <section class="carrusel">
+
+         <div class="slider-container">
+
+            <div class="card-wrapper">
+
+               <ul class="card-list">
+
+                  {{> cartas_servicios }}
+
+               </ul>
 
             </div>
 
-          </section>
+         </div>
+
+      </section>
 
 
 
-          <section class="porque-elegirnos">
+      <section class="porque-elegirnos">
 
-            <div class="left-column">
+         <div class="left-column">
 
-               <h2>¿Por qué <span class="highlight">Elegirnos?</span></h2>
+            <h2>¿Por qué <span class="highlight">Elegirnos?</span></h2>
 
-               <p>En nuestro bufete notarial, nos enorgullecemos de ofrecer servicios legales confiables y personalizados que se adaptan a tus necesidades. Contamos con años de experiencia en el ámbito notarial, brindando soluciones efectivas en autenticación de documentos, redacción de escrituras, elaboración de testamentos, donaciones, y más.</p>
+            <p>En nuestro bufete notarial, nos enorgullecemos de ofrecer servicios legales confiables y personalizados
+               que se adaptan a tus necesidades. Contamos con años de experiencia en el ámbito notarial, brindando
+               soluciones efectivas en autenticación de documentos, redacción de escrituras, elaboración de testamentos,
+               donaciones, y más.</p>
 
-               <p>Si te convencimos, agenda tu cita o contáctanos.</p>
+            <p>Si te convencimos, agenda tu cita o contáctanos.</p>
 
-               <a href="../main/agendar_cita/agendar_cita.html">
+            <a href="../main/agendar_cita/agendar_cita.html">
 
-                  <button class="btn" href="../main/agendar_cita/agendar_cita.html">Agendar Cita</button>
+               <button class="btn" href="../main/agendar_cita/agendar_cita.html">Agendar Cita</button>
 
-               </a>
+            </a>
 
-             </div>
+         </div>
 
-             <div class="right-column">
+         <div class="right-column">
 
-               {{> cartas_valores }}
+            {{> cartas_valores }}
 
-          </section>
+      </section>
 
 
 
-        {{> btn_top}}
+      {{> btn_top}}
 
-    </main>
+   </main>
 
-    {{> footer}}
+   {{> footer}}
 
-    <!--=============== MAIN JS ===============-->
+   <!--=============== MAIN JS ===============-->
 
-    <base href="/proyecto_web">
-
-    <script type="module" src="src/Scripts/main.js"></script>
+   <script type="module" src="/src/Scripts/main.js"></script>
 
 </body>
 
