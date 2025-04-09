@@ -1,60 +1,58 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-      <!--=============== REMIXICONS ===============-->
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <base href="/Proyecto_Web_2024">  
+   <!--=============== REMIXICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
-       <!--=============== LESS ===============-->
-    <base href="/proyecto_web">
-    <link rel="stylesheet" href="less/main.less" />
+   <link rel="stylesheet" href="../../less/main.less" />
 
-      <title>Bufete Notarial Valladares Guifarro</title>
-   </head>
-   <body>
-    {{> header}}
-      <!--=============== MAIN ===============-->
+   <title>Bufete Notarial Valladares Guifarro</title>
+</head>
+
+<body>
+   {{> header}}
+   <!--=============== MAIN ===============-->
    <main>
 
-         <section class="hero_cantact">
-            <picture>
-                <img src="img/IMAGEN_FONDO_CONTACTANOS.jpg" alt="Imagen ilustrativa del fundador de la empresa">
-            </picture> 
-            <a class="fondo_oscuro_contact"></a>
-               <div class="contenido_titulo">
-                   <h1>¡Contactenos!</h1>
-                   <p>
-                     Resolveremos tus dudas y atendemos tus necesidades legales 
-                  </p>
-               </div>
-             </div>
-        </section>
+      <section class="hero_cantact">
+         <picture>
+            <img src="img/IMAGEN_FONDO_CONTACTANOS.jpg" alt="Imagen ilustrativa del fundador de la empresa">
+         </picture>
+         <a class="fondo_oscuro_contact"></a>
+         <div class="contenido_titulo">
+            <h1>¡Contactenos!</h1>
+            <p>
+               Resolveremos tus dudas y atendemos tus necesidades legales
+            </p>
+         </div>
+         </div>
+      </section>
 
-        <div class="formulario_contact"> 
-        <form id="contactForm" action="/Proyecto_2025/main/contactenos/contactenos.html" method="get">
-         <h2>Mándanos un mensaje</h2>
-         {{> contactenos/form_contac}}
-        <button type="submit">Enviar</button>
-        </form> 
-        </div>
-     
-     
-        <section class="contactos_cont">
-          {{> contactenos/contact-items}}
-         </section>
+      <div class="formulario_contact">
+         <form id="contactForm" action="/Proyecto_2025/main/contactenos/contactenos.html" method="get">
+            <h2>Mándanos un mensaje</h2>
+            {{> contactenos/form_contac}}
+            <button type="submit">Enviar</button>
+         </form>
+      </div>
 
-         {{> btn_top}}
-      </main>
 
-      {{> footer}}
-      <!--=============== MAIN JS ===============-->
-      <base href="/proyecto_web">
-      <script type="module" src="src/Scripts/main.js"></script>
-      <script type="module" src="src/Scripts/contacto.js"></script>
+      <section class="contactos_cont">
+         {{> contactenos/contact-items}}
+      </section>
 
-   </body>
+      {{> btn_top}}
+   </main>
+
+   {{> footer}}
+   <!--=============== MAIN JS ===============-->
+   <script type="module" src="/src/Scripts/main.js"></script>
+   <script type="module" src="/src/Scripts/contacto.js"></script>
+
+</body>
+
 </html>
