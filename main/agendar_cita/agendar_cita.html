@@ -42,7 +42,7 @@
                     <label for="txt_Nombre">Nombre completo</label>
                     <input id="txt_Nombre" name="txt_Nombre" type="text" placeholder="Nombre Completo" />
 
-                    <label for="txt_Email">Correo electronico</label>
+                    <label for="txt_Email">Correo electrónico</label>
                     <input id="txt_Email" name="txt_Email" type="email" placeholder="correo@gmail.com" />
 
                     <label for="txt_Number">Número telefónico</label>
@@ -64,20 +64,9 @@
                     <button type="submit" name="btnEnviar">Enviar</button>
                 </form>
             </div>
-
-            <div class="servicio_contacto">
-                <a class="mensaje">¿Tienes alguna duda antes de agendar?
-                    ¡Contactanos y con gusto te orientaremos!
-                </a>
-                <a href="main/contactenos/contactenos.html" class="btn_mensaje">Contáctanos</a>
-            </div>
-
-            <div class="servicio_contacto">
-                <a class="mensaje">Tienes dudas sobre los servicios,
-                    da clic en el botón para consultarlos
-                </a>
-                <a href="main/servicios/servicios.html" class="btn_mensaje">Servicios</a>
-            </div>
+            {{> contacto_servicio
+                servContCollection=servicio_contacto
+            }}
         </section>
         {{> btn_top}}
     </main>
