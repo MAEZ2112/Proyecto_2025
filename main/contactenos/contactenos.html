@@ -35,45 +35,17 @@
         </section>
 
         <div class="formulario_contact"> 
-         <h2>Mándanos un mensaje</h2>
-         <form id="contactForm" action="/Proyecto_2025/main/contactenos/contactenos.html" method="get">
-             <div class="contenido">
-                 <input type="text" id="nombre" placeholder="Nombre Completo">
-             </div>
-             <div class="contenido">
-                 <input type="tel" id="telefono" placeholder="Número de teléfono">
-             </div>
-             <div class="contenido">
-                 <textarea id="mensaje" placeholder="Mensaje"></textarea>
-             </div>
-             <button type="submit">Enviar</button>
-         </form>
-     </div>
+        <form id="contactForm" action="/Proyecto_2025/main/contactenos/contactenos.html" method="get">
+        {{> contactenos/form_contac}}
+        <button type="submit">Enviar</button>
+        </form> 
+        </div>
+     
      
         <section class="contactos_cont">
-            <div class="telefono_contact">
-                <picture>
-                  <img src="img/phone-call_455705.png" alt="icono de telefono">            
-                </picture> 
-                <p> +504 9928-6475</p>
-            </div>
-
-            <div class="Gmail">
-                <picture>
-                  <img src="img/email_6244710.png" alt="icono de gmail">            
-                </picture> 
-                <p>joseluisvalladares13@gmail.com  </p>
-            </div>
-
-            <div class="direccion_contact">
-                <picture>
-                  <img src="img/gps_11160901.png" alt="icono de dirección">            
-                </picture> 
-                <p> Ciudad de Tegucigalpa, Municipio del Distrito Central, Departamento de Francisco Morazán, Honduras, Centro América; Boulevard Morazán, Torre Morazán numero uno, 
-                  segundo nivel de área comercial, cubículos 30504 y 30505.</p>
-                  <a href="https://www.google.com/maps/place/Building+Center+Tower+Morazan/@14.1006445,-87.1852201,17z/data=!3m1!4b1!4m6!3m5!1s0x8f6fa2d8a9663f1f:0x4f3ab1114acdd234!8m2!3d14.1006445!4d-87.1826452!16s%2Fg%2F11c1pf0qks?entry=ttu&g_ep=EgoyMDI0MTIwMS4xIKXMDSoASAFQAw%3D%3D" target="_blank">Ver mapa</a>
-               </div>
+          {{> contactenos/contact-items}}
          </section>
+
          {{> btn_top}}
       </main>
 

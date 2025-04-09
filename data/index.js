@@ -4,6 +4,9 @@ import { requisitosPage } from "./pages/requisitosPage.js";
 import { testimoniosPage } from "./pages/testimoniosPage.js";
 import { equipoPage } from "./pages/equipoPage.js";
 import { agentar_citaPage } from "./pages/agendar_citaPage.js";
+import { blogPage } from "./pages/blogPage.js";
+import { preguntasPage } from "./pages/preguntasPage.js";
+import { contactoPage } from "./pages/contactoPage.js";
 
 const commonData = {
     navigation: [
@@ -108,6 +111,18 @@ export const getPageContext = (pagePath) => {
 
         case '/main/agendar_cita/agendar_cita.html':
             pageData = agentar_citaPage
+            break;
+
+        case '/main/blog/blog.html': 
+            pageData = blogPage
+            break;
+            
+        case '/main/preguntas_frecuentes/faq.html':
+            pageData = preguntasPage
+            break;
+
+        case '/main/contactenos/contactenos.html':
+            pageData = contactoPage
             break;
 
         default:

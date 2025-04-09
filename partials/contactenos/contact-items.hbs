@@ -1,0 +1,11 @@
+{{#each informacion}}
+  <div class="{{tipo}}_contact">
+    <picture>
+      <img src="img/{{icono}}" alt="icono de {{tipo}}">
+    </picture>
+    <p>{{descripcion}}</p>
+    {{#if enlace}}
+      <a href="{{enlace}}" target="_blank">Ver mapa</a>
+    {{/if}}
+  </div>
+{{/each}}
