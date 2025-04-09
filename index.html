@@ -25,66 +25,38 @@
          <div class="panel_contenido">
             <h1>Asesoría legal de confianza para todas tus necesidades jurídicas</h1>
             <a class="frase">Con más de 10 años de experiencia, brindamos soluciones legales rápidas y efectivas.</a>
-            <a class="btn_cita" href="main/agendar_cita/agendar_cita.html">Agendar Cita</a>
+            {{> boton
+            btnCollection=btn_cita_inicio
+            }}
          </div>
       </section>
+
       <section class="nuestros_servicios">
          <h2>Nuestros Servicios</h2>
-         <div class="servicios">
-            <img src="img/redaccion_contratos.jpg" alt="imagen_servicios">
-            <a>Redacción de contratos</a>
-         </div>
-         <div class="servicios">
-            <img src="img/elaboracion_testamento.png" alt="imagen_servicios">
-            <a>Elaboración de testamentos</a>
-         </div>
-         <div class="servicios">
-            <img src="img/bienes_inmuebles.png" alt="imagen_servicios">
-            <a>Compra-Venta de inmuebles</a>
-         </div>
-         <div class="servicios">
-            <img src="img/protocolizacion_actas.jpg" alt="imagen_servicios">
-            <a>Protocolización de actas</a>
-         </div>
-         <a class="btn_servicios" href="main/servicios/servicios.html">Ver todos los servicios</a>
+         {{>cartas_servicio_inicio
+         servicios=servicios
+         }}
+         {{> boton
+         btnCollection=btn_servicios_inicio
+         }}
       </section>
 
       <section class="estadisticas_logros">
          <h2>Estadísticas y Logros</h2>
-         <div class="tarjeta">
-            <img src="img/comentarios_favorables.jpg" alt="imagen_tarjeta">
-            <h3>700</h3>
-            <a>Comentarios favorables</a>
-         </div>
-         <div class="tarjeta">
-            <img src="img/cliente_satisfecho.png" alt="imagen_tarjeta">
-            <h3>5417</h3>
-            <a>Clientes satisfechos</a>
-         </div>
-         <div class="tarjeta">
-            <img src="img/matrimonios_realizados.jpg" alt="imagen_tarjeta">
-            <h3>500</h3>
-            <a>Matrimonios realizados</a>
-         </div>
+         {{>estadisticas_servicios
+         estadisticas=estadisticas
+         }}
       </section>
 
       <section class="testimonios_clientes">
          <h2>Testimonios de Clientes</h2>
-         <div class="cliente">
-            <img src="img/usuario.png" alt="imagen_cliente">
-            <a>"Me asesoraron con la redacción de mi testamento, un trámite que había postergado por años.
-               Me dieron tranquilidad al explicar cada paso con claridad y paciencia."</a>
-            <h3>María López</h3>
-            <a class="profesion">Profesora</a>
-         </div>
-         <div class="cliente">
-            <img src="img/usuario.png" alt="imagen_cliente">
-            <a>"Cuando necesité gestionar una escritura pública para una compra importante,
-               este bufete fue mi mejor elección. Su equipo siempre estuvo disponible, ¡un servicio de excelencia!"</a>
-            <h3>Juan Obregón</h3>
-            <a class="profesion">Gerente</a>
-         </div>
-         <a class="btn_testimonios" href="main/testimonios/testimonios.html">Ver mas...</a>
+         {{> testimonios_inicio
+         testimonios=testimonios
+         }}
+
+         {{> boton
+         btnCollection=btn_testimonios_inicio
+         }}
       </section>
 
       <section class="nuestro_equipo">
@@ -92,7 +64,9 @@
          <div class="equipo">
             <img src="img/Equipo_Trabajo.jpg" alt="imagen_equipo">
          </div>
-         <a class="btn_equipo" href="main/equipo/equipo.html">Ver miembros</a>
+         {{> boton
+         btnCollection=btn_equipo_inicio
+         }}
       </section>
       {{> btn_top}}
    </main>
