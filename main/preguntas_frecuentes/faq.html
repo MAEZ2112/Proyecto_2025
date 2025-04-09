@@ -1,74 +1,73 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-      <!--=============== REMIXICONS ===============-->
-      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <base href="/Proyecto_Web_2024">  
+  <!--=============== REMIXICONS ===============-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
-       <!--=============== LESS ===============-->
-    <base href="/proyecto_web">
-    <link rel="stylesheet" href="less/main.less" />
+  <!--=============== LESS ===============-->
+  <link rel="stylesheet" href="../../less/main.less" />
 
-      <title>Bufete Notarial Valladares Guifarro</title>
-   </head>
-   <body>
-    {{> header}}
-    <!--=============== MAIN ===============-->      
-    <main>
-      <section class="heros">
-          <picture>
-              <img src="img/IMAGEN_FONDO_PREGUNTAS.jpg" alt="Imagen ilustrativa de las leyes">
-          </picture> 
-          <a class="fondo_oscuro_faq"></a>
-             <div class="contenido_hero">
-                 <h1>Preguntas Frecuentes</h1>
-                 <p>
-                   Resolvemos tus dudas sobre trámites notariales y legales. 
-                   Si tienes otra consulta, no dudes en contactarnos directamente. </p>
-             </div>
-           </div>
-      </section>
+  <title>Bufete Notarial Valladares Guifarro</title>
+</head>
 
-        <section class="preguntas_frecuentes">
-          <div class="container_faq">
-            <h3>Servicios y Costos</h3>
-    
-            {{> preguntas/preg_servicio}}
+<body>
+  {{> header}}
+  <!--=============== MAIN ===============-->
+  <main>
+    <section class="heros">
+      <picture>
+        <img src="img/IMAGEN_FONDO_PREGUNTAS.jpg" alt="Imagen ilustrativa de las leyes">
+      </picture>
+      <a class="fondo_oscuro_faq"></a>
+      <div class="contenido_hero">
+        <h1>Preguntas Frecuentes</h1>
+        <p>
+          Resolvemos tus dudas sobre trámites notariales y legales.
+          Si tienes otra consulta, no dudes en contactarnos directamente. </p>
+      </div>
+      </div>
+    </section>
 
-            <h3>Requisitos para Trámites</h3>
-         
-            {{> preguntas/preg_requi}}
-          
-            <h3>Correcciones y Autorizaciones</h3>
-      
-            {{> preguntas/preg_correc}}
-      
-            <h3>Trámites de Donaciones y Demandas</h3>
-            
-            {{> preguntas/preg_donaciones}}
+    <section class="preguntas_frecuentes">
+      <div class="container_faq">
+        <h3>Servicios y Costos</h3>
 
-           </div>
-           
-        </section>
+        {{> preguntas/preg_servicio}}
 
-        {{> btn_top}}
+        <h3>Requisitos para Trámites</h3>
 
-        <!--BOTONES-->
-        <section class="botones">
-          {{> preguntas/btn-items}}
-        </section>
-      
-    </main>
-    {{> footer}}
+        {{> preguntas/preg_requi}}
 
-     <!--=============== MAIN JS ===============-->
-     <base href="/Proyecto_2025">
-     <script type="module" src="src/Scripts/main.js"></script>
-     <script type="module" src="src/Scripts/preg.js"></script>
+        <h3>Correcciones y Autorizaciones</h3>
+
+        {{> preguntas/preg_correc}}
+
+        <h3>Trámites de Donaciones y Demandas</h3>
+
+        {{> preguntas/preg_donaciones}}
+
+      </div>
+
+    </section>
+
+    {{> btn_top}}
+
+    <!--BOTONES-->
+    <section class="botones">
+      {{> preguntas/btn-items}}
+    </section>
+
+  </main>
+  {{> footer}}
+
+  <!--=============== MAIN JS ===============-->
+  <script type="module" src="/src/Scripts/main.js"></script>
+  <script type="module" src="/src/Scripts/preg.js"></script>
 
 </body>
+
 </html>

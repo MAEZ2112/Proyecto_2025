@@ -9,8 +9,7 @@
    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
    <!--=============== LESS ===============-->
-   <base href="/proyecto_web">
-   <link rel="stylesheet" href="less/main.less" />
+   <link rel="stylesheet" href="../../less/main.less" />
 
    <title>Bufete Notarial Valladares Guifarro</title>
 </head>
@@ -31,7 +30,7 @@
             <img src="img/imagen_fundador.jpg" alt="imagen_cliente">
             <ul class="lista_fundador">
                {{>list_fundador
-                  fundadorCollection=lista_fund
+               fundadorCollection=lista_fund
                }}
             </ul>
          </div>
@@ -40,20 +39,20 @@
          <h2 class="titulo_equipo">EQUIPO DEDICADO A TU SERVICIO</h2>
          <div class="integrantes_equipo">
             {{>cartas_equipo
-               equipoCollection=cartas_equipo
-               listCollection=items
+            equipoCollection=cartas_equipo
+            listCollection=items
             }}
          </div>
          {{> contacto_servicio
-            servContCollection=contactanos
-        }}
+         servContCollection=contactanos
+         }}
       </section>
       {{> btn_top}}
    </main>
    {{> footer}}
    <!--=============== MAIN JS ===============-->
-   <base href="/proyecto_web">
-   <script type="module" src="src/Scripts/main.js"></script>
+
+   <script type="module" src="/src/Scripts/main.js"></script>
 </body>
 
 </html>
