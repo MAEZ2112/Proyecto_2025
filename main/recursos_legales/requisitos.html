@@ -21,16 +21,16 @@
     <main>
         <section class="hero-panel">
             <picture>
-               <img src="img/IMAGEN_FONDO_RECURSOS.jpg" alt="Requisitos-Recursos Legales">                    
-           </picture>
-           <a class="fondo_oscuro"></a>
-           <div class="hero-content">
-               <h1>Recursos Legales</h1>
+                <img src="img/IMAGEN_FONDO_RECURSOS.jpg" alt="Requisitos-Recursos Legales">
+            </picture>
+            <a class="fondo_oscuro"></a>
+            <div class="hero-content">
+                <h1>Recursos Legales</h1>
                 <p>Encuentra los requisitos y guías necesarias para completar tus <br>
                     trámites legales de manera efectiva.</p>
-          </section>
+        </section>
 
-          <section class="services">
+        <section class="services">
             <h2 class="services-title">Requisitos</h2>
             <p class="services-description">
                 Para proceder a realizar cualquier servicio que ofrecemos, debe de contar con los siguientes requisitos:
@@ -39,38 +39,15 @@
                 {{> cartas_requisitos }}
             </div>
         </section>
-        
-        <section class="descarga-documentos">
-         <h2 class="descarga-title">Descarga de Documentos Importantes</h2>
-         <div class="documentos-grid">
-             <div class="documento-item">
-                 <img src="img/actas_notariales.png" alt="Documento 1">
-                 <div class="documento-info">
-                     <h3>Formato de Autentica</h3>
-                     <p>La autenticación de documentos es un proceso que se realiza para garantizar que la información que contienen es válida y auténtica. </p>
-                     <a href="recursos/AUTENTICA DE COPIAS TEGUCIGALPA.docx" download="Formato de Autenticas">Descarga Aqui</a>
-                 </div>
-             </div>
-             <div class="documento-item">
-                 <img src="img/Donaciones.jpg" alt="Documento 2">
-                 <div class="documento-info">
-                     <h3>Formato de Traspaso Vehicular</h3>
-                     <p>El formato de traspaso vehicular es un documento que se utiliza para solicitar a la autoridad competente el cambio de propietario de un vehículo</p>
-                     <a href="recursos/AUTENTICA DE FIRMA TRASPASO VEHICULO MARLEN RIVAS.docx" download="Formato de Traspaso Vehicular">Descarga Aqui</a>
-                 </div>
-             </div>
-             <div class="documento-item">
-               <img src="img/garantias_constitucionales.jpg" alt="Documento 3">
-               <div class="documento-info">
-                   <h3>Formato de Poderes</h3>
-                   <p>El formato de poder para pleitos y gestiones administrativas sirve para designar a una persona para que represente a otra en un procedimiento judicial o para administrar sus bienes e intereses</p>
-                   <a href="recursos/PODER PARA PLEITOS Y GESTIONES ADMINISTRATIVAS EDWIN ESPINAL.docx" download="Formato de Pleito y Gestiones Administrativas">Descarga Aqui</a>
-               </div>
-           </div>
-         </div>
-     </section>
 
-        
+        <section class="descarga-documentos">
+            <h2 class="descarga-title">Descarga de Documentos Importantes</h2>
+            <div class="documentos-grid">
+                {{> cartas_formatos }}
+            </div>
+        </section>
+
+
         {{> btn_top}}
     </main>
     {{> footer}}

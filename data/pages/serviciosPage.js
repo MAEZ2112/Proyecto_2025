@@ -43,5 +43,47 @@ export const serviciosPage = {
             badge: "Constitución de hipotecas",
             titulo: "Garantías reales para préstamos financieros."
         }
+    ],
+
+    contadores: [
+        {
+            class: "ri-chat-1-fill",
+            data_val: "700",
+            text: "Comentarios Favorables"
+        },
+
+        {
+            class: "ri-service-fill",
+            data_val: "5417",
+            text: "Clientes Satisfechos"
+        },
+
+        {
+            class: "ri-check-double-line",
+            data_val: "500",
+            text: "Matrimonios Realizados"
+        }
+    ],
+
+    valores: [
+        {
+            titulo: "Orientación al cliente y a su negocio",
+            texto: "Nuestra actividad está orientada a satisfacer las necesidades y exigencias de nuestros clientes y de sus negocios. El cliente es nuestro motor y faro, la razón de existir de nuestra empresa, y por ello dedicamos todo nuestro esfuerzo y energía a la consecución de sus objetivos y a su éxito, que es el nuestro."
+        },
+
+        {
+            titulo: "Implicación y cercanía",
+            texto: "Estamos totalmente comprometidos e implicados con nuestros clientes, nos ponemos en su lugar y les transmitimos seguridad y confianza. Los servicios que les ofrecemos son servicios a su medida, personalizados y adaptados a sus particularidades e intereses, destinados a satisfacer sus necesidades reales mediante la solución más adecuada y conveniente."
+        },
+
+        {
+            titulo: "Proactividad",
+            texto: "No nos limitamos únicamente a dar respuesta a los problemas y conflictos que nos plantean nuestros clientes, sino que nos anticipamos a sus necesidades y riesgos a través de la previsión y la prevención."
+        },
+
+        {
+            titulo: "Excelencia y calidad",
+            texto: "Contamos con profesionales de reconocida experiencia y en permanente actualización y formación, y desarrollamos métodos de trabajo basados en procesos y la mejora continua, todo ello para ofrecer servicios de la más alta calidad y eficiencia."
+        }
     ]
 };
