@@ -1,0 +1,9 @@
+{{#each equipoCollection}}
+<div class="card_integrante">
+    <img src="{{imgSrc}}" alt={{imgDsc}}>
+    <a>{{nombre}}</a>
+    <ul class="lista_equipo">
+        {{> lista_equipo this}}
+    </ul>
+</div>
+{{/each}}

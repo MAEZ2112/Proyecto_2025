@@ -171,8 +171,40 @@
         font-weight: bold;
     }
 
+    .servicios {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        align-self: center;
+        background-color: var(--white-color);
+        height: 150px;
+        width: 325px;
+        transform: translate(15%, 30%);
+        border-radius: 7px;
+
+        a {
+            margin: 0rem auto;
+            transform: translate(0%, 100%);
+            font-style: var(--font-semi-bold);
+            color: var(--black-color-light);
+        }
+
+        img {
+            display: flex;
+            align-self: center;
+            position: absolute;
+            height: 35px;
+            width: 35px;
+            transform: translate(150px, -20px);
+        }
+    }
+
     @media (min-width: #breaks[desktop]) {
         height: 50vh;
+
+        .servicios {
+            margin: 15px;
+        }
 
         h2 {
             top: 10%;
@@ -188,6 +220,10 @@
 
         height: 90vh;
 
+        .servicios {
+            margin: 15px 15px 15px 0px;
+        }
+
         h2 {
             top: 5%;
         }
@@ -202,6 +238,17 @@
 
         height: 145vh;
 
+        .servicios{
+            margin: 15px 15px 15px 0px;
+            width: 300px;
+            transform: translate(0%, 30%);
+            margin-left: 10px;
+
+            img {
+                transform: translate(140px, -20px);
+            }
+        }
+
         h2 {
             top: 5%;
             font-size: 100%;
@@ -214,51 +261,7 @@
     }
 }
 
-.servicios {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    align-self: center;
-    background-color: var(--white-color);
-    height: 150px;
-    width: 325px;
-    transform: translate(15%, 30%);
-    border-radius: 7px;
 
-    a {
-        margin: 0rem auto;
-        transform: translate(0%, 100%);
-        font-style: var(--font-semi-bold);
-    }
-
-    img {
-        display: flex;
-        align-self: center;
-        position: absolute;
-        height: 35px;
-        width: 35px;
-        transform: translate(150px, -20px);
-    }
-
-    @media (min-width: #breaks[desktop]) {
-        margin: 15px;
-    }
-
-    @media (max-width: #breaks[tablet]) {
-        margin: 15px 15px 15px 0px;
-    }
-
-    @media (max-width: #breaks[mobile]) {
-        margin: 15px 15px 15px 0px;
-        width: 300px;
-        transform: translate(0%, 30%);
-        margin-left: 10px;
-
-        img {
-            transform: translate(140px, -20px);
-        }
-    }
-}
 
 .estadisticas_logros {
     position: relative;
@@ -308,6 +311,7 @@
     a {
         font-style: var(--font-semi-bold);
         font-size: 140%;
+        color: var(--black-color-light);
     }
 
     img {
@@ -479,6 +483,7 @@
         width: 1000px;
         transform: translate(15%, -60%);
         font-style: var(--font-semi-bold);
+        color: var(--black-color-light);
     }
 
     a.profesion {
@@ -501,6 +506,7 @@
         width: 100%;
         font-size: 90%;
         transform: translate(-190px, 41px);
+        color: var(--black-color-light);
     }
 
     @media (min-width: #breaks[desktop]) {
