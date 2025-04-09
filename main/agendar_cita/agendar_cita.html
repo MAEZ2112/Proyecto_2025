@@ -9,8 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== LESS ===============-->
-    <base href="/proyecto_web">
-    <link rel="stylesheet" href="less/main.less" />
+    <link rel="stylesheet" href="../../less/main.less" />
 
     <title>Bufete Notarial Valladares Guifarro</title>
 </head>
@@ -65,16 +64,15 @@
                 </form>
             </div>
             {{> contacto_servicio
-                servContCollection=servicio_contacto
+            servContCollection=servicio_contacto
             }}
         </section>
         {{> btn_top}}
     </main>
     {{> footer}}
     <!--=============== MAIN JS ===============-->
-    <base href="/proyecto_web">
-    <script type="module" src="src/Scripts/agendar_cita.js"></script>
-    <script type="module" src="src/Scripts/main.js"></script>
+    <script type="module" src="/src/Scripts/agendar_cita.js"></script>
+    <script type="module" src="/src/Scripts/main.js"></script>
 </body>
 
 </html>
