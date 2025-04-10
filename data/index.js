@@ -54,7 +54,7 @@ export const getPageContext = (pagePath) => {
             break;
     }
     return {
-        ...commonData,
+        ...footer,
         ...pageData,
         ...cardServicioContractanos,
         ...botones,
@@ -65,12 +65,19 @@ export const getPageContext = (pagePath) => {
     }
 }
 
-const commonData = {
-    navigation: [
+const footer = {
+    navigation_1: [
         { url: 'index.html', label: 'Inicio' },
         { url: 'main/servicios/servicios.html', label: 'Servicios' },
         { url: 'main/agendar_cita/agendar_cita.html', label: 'Agenda Cita' },
         { url: 'main/recursos_legales/requisitos.html', label: 'Requisitos' },
+    ],
+
+    navigation_2: [
+        { url: '../../index.html', label: 'Inicio' },
+        { url: '../../main/servicios/servicios.html', label: 'Servicios' },
+        { url: '../../main/agendar_cita/agendar_cita.html', label: 'Agenda Cita' },
+        { url: '../../main/recursos_legales/requisitos.html', label: 'Requisitos' },
     ]
 }
 

@@ -7,7 +7,7 @@ links = links_inicio
 
 <body>
    {{> header
-      link = link_inicio
+   link = link_inicio
    }}
    <main>
       <section class="panel_principal">
@@ -65,7 +65,9 @@ links = links_inicio
       </section>
       {{> btn_top}}
    </main>
-   {{>footer}}
+   {{> footer
+   navigation = navigation_1
+   }}
    <!--=============== MAIN JS ================-->
    <script type="module" src="src/Scripts/main.js"></script>
 </body>
