@@ -150,6 +150,18 @@ const head = {
             rel: 'stylesheet',
         },
     ],
+
+    links_inicio:[
+        {
+            href: 'https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css',
+            rel: 'stylesheet',
+        },
+        {
+            href: 'less/main.less',
+            rel: 'stylesheet',
+        },
+    ],
+    
 }
 
 const panel_1 = {

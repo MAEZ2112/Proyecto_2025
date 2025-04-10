@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-{{> head}}
+{{> head
+links = links
+}}
 
 <body>
     {{> header}}
@@ -13,7 +15,7 @@
             <a class="fondo_oscuro"></a>
             <div class="cita_titulo">
                 {{> estilo_panel_1
-                    panel_1 = agendar_cita
+                panel_1 = agendar_cita
                 }}
             </div>
         </section>
@@ -26,9 +28,9 @@
                 <h2>Formulario</h2>
                 {{> formulario_cita}}
             </div>
-                {{> contacto_servicio
-                servContCollection=servicio_contacto
-                }}
+            {{> contacto_servicio
+            servContCollection=servicio_contacto
+            }}
         </section>
         {{> btn_top}}
     </main>
