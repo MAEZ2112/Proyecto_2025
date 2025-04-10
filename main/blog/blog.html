@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!--=============== REMIXICONS ===============-->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-  <!--=============== LESS ===============-->
-  <link rel="stylesheet" href="../../less/main.less" />
-
-  <title>Bufete Notarial Valladares Guifarro</title>
-</head>
+{{> head}}
 
 <body>
   {{> header}}
@@ -26,10 +15,9 @@
       </picture>
       <a class="fondo_oscuro_blog"></a>
       <div class="contenido_titulo">
-        <h1>Conoce más sobre temas legales</h1>
-        <p>
-          Explora nuestro blog y obtén información valiosa sobre procesos legales, requisitos y consejos
-          utiles para resulver tus dudas. </p>
+        {{>estilo_panel_2
+        panel_2 = blog
+        }}
       </div>
       </div>
     </section>

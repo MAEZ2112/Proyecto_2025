@@ -8,6 +8,62 @@ import { blogPage } from "./pages/blogPage.js";
 import { preguntasPage } from "./pages/preguntasPage.js";
 import { contactoPage } from "./pages/contactoPage.js";
 
+export const getPageContext = (pagePath) => {
+    console.log('Rendering:', pagePath);
+
+    let pageData = {};
+
+    switch (pagePath) {
+        case '/index.html':
+            pageData = indexPage
+            break;
+
+        case '/main/servicios/servicios.html':
+            pageData = serviciosPage
+            break;
+
+        case '/main/recursos_legales/requisitos.html':
+            pageData = requisitosPage
+            break;
+
+        case '/main/testimonios/testimonios.html':
+            pageData = testimoniosPage
+            break;
+
+        case '/main/equipo/equipo.html':
+            pageData = equipoPage
+            break;
+
+        case '/main/agendar_cita/agendar_cita.html':
+            pageData = agentar_citaPage
+            break;
+
+        case '/main/blog/blog.html': 
+            pageData = blogPage
+            break;
+            
+        case '/main/preguntas_frecuentes/faq.html':
+            pageData = preguntasPage
+            break;
+
+        case '/main/contactenos/contactenos.html':
+            pageData = contactoPage
+            break;
+
+        default:
+            break;
+    }
+    return {
+        ...commonData,
+        ...pageData,
+        ...cardServicioContractanos,
+        ...botones,
+        ...head,
+        ...panel_1,
+        ...panel_2,
+    }
+}
+
 const commonData = {
     navigation: [
         { url: 'index.html', label: 'Inicio' },
@@ -83,55 +139,74 @@ const botones = {
     ],
 }
 
-export const getPageContext = (pagePath) => {
-    console.log('Rendering:', pagePath);
+const head = {
+    links:[
+        {
+            href: 'https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css',
+            rel: 'stylesheet',
+        },
+        {
+            href: '../../less/main.less',
+            rel: 'stylesheet',
+        },
+    ],
+}
 
-    let pageData = {};
+const panel_1 = {
+    inicio:[
+        {
+            h1: 'Asesoría legal de confianza para todas tus necesidades jurídicas',
+            a: 'Con más de 10 años de experiencia, brindamos soluciones legales rápidas y efectivas.',
+        },        
+    ],
+    agendar_cita:[
+        {
+            h1: '¡Agenda tu cita!',
+            a: 'Estamos aqui para ayudarte con tus tramites legales y notariales. Reserva tu cita en unos minutos y recibe una atención personalizada.',
+        },        
+    ],
+}
 
-    switch (pagePath) {
-        case '/index.html':
-            pageData = indexPage
-            break;
+const panel_2 = {
+    blog:[
+        {
+            h1: 'Conoce más sobre temas legales',
+            p: 'Explora nuestro blog y obtén información valiosa sobre procesos legales, requisitos y consejos utiles para resulver tus dudas.',
+        },        
+    ],
 
-        case '/main/servicios/servicios.html':
-            pageData = serviciosPage
-            break;
+    contactenos:[
+        {
+            h1: '¡Contactenos!',
+            p: 'Resolveremos tus dudas y atendemos tus necesidades legales',
+        },        
+    ],
 
-        case '/main/recursos_legales/requisitos.html':
-            pageData = requisitosPage
-            break;
+    faq:[
+        {
+            h1: 'Preguntas Frecuentes',
+            p: 'Resolvemos tus dudas sobre trámites notariales y legales. Si tienes otra consulta, no dudes en contactarnos directamente.',
+        },        
+    ],
 
-        case '/main/testimonios/testimonios.html':
-            pageData = testimoniosPage
-            break;
+    requisitos:[
+        {
+            h1: 'Recursos Legales',
+            p: 'Encuentra los requisitos y guías necesarias para completar tus trámites legales de manera efectiva.',
+        },        
+    ],
 
-        case '/main/equipo/equipo.html':
-            pageData = equipoPage
-            break;
+    nosotros:[
+        {
+            h1: '¿Quiénes Somos?',
+            p: 'En nuestro bufete notarial, ofrecemos servicios legales y notariales con un compromiso inquebrantable hacia la ética, la transparencia y la excelencia. Con años de experiencia y un enfoque personalizado, garantizamos soluciones jurídicas confiables que protegen los intereses y derechos de nuestros clientes.',
+        },        
+    ],
 
-        case '/main/agendar_cita/agendar_cita.html':
-            pageData = agentar_citaPage
-            break;
-
-        case '/main/blog/blog.html': 
-            pageData = blogPage
-            break;
-            
-        case '/main/preguntas_frecuentes/faq.html':
-            pageData = preguntasPage
-            break;
-
-        case '/main/contactenos/contactenos.html':
-            pageData = contactoPage
-            break;
-
-        default:
-            break;
-    }
-    return {
-        ...commonData,
-        ...pageData,
-        ...cardServicioContractanos,
-        ...botones
-    }
+    testimonio:[
+        {
+            h1: 'Casos de Exito',
+            p: 'En Valladares Guifarro, nos dedicamos a brindar servicios legales excepcionales. Las historias de satisfacción de nuestros clientes reflejan nuestro compromiso con la ley del país y nuestra dedicación a ofrecer soluciones confiables y efectivas para cada caso.',
+        },        
+    ],
 }
