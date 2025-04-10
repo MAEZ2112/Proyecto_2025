@@ -1,0 +1,14 @@
+<li class="dropdown__item">
+  <div class="nav__link">
+    {{titulo}} <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+  </div>
+  <ul class="dropdown__menu">
+    {{#each opciones}}
+      <li>
+        <a href="{{href}}" class="dropdown__link">
+          <i class="{{icon}}"></i> {{texto}}
+        </a>
+      </li>
+    {{/each}}
+  </ul>
+</li>
