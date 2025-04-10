@@ -1,17 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   <!--=============== REMIXICONS ===============-->
-   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-   <link rel="stylesheet" href="../../less/main.less" />
-
-   <title>Bufete Notarial Valladares Guifarro</title>
-</head>
+{{> head
+links = links
+}}
 
 <body>
    {{> header}}
@@ -24,16 +16,15 @@
          </picture>
          <a class="fondo_oscuro_contact"></a>
          <div class="contenido_titulo">
-            <h1>¡Contactenos!</h1>
-            <p>
-               Resolveremos tus dudas y atendemos tus necesidades legales
-            </p>
+            {{>estilo_panel_2
+            panel_2 = contactenos
+            }}
          </div>
          </div>
       </section>
 
       <div class="formulario_contact">
-         <form id="contactForm" action="/Proyecto_2025/main/contactenos/contactenos.html" method="get">
+         <form id="contactForm" action="/main/contactenos/contactenos.html" method="get">
             <h2>Mándanos un mensaje</h2>
             {{> contactenos/form_contac}}
             <button type="submit">Enviar</button>
