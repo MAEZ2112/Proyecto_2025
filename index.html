@@ -1,18 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   <!--=============== REMIXICONS ===============-->
-   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-   <!--=============== LESS ===============-->
-   <link rel="stylesheet" href="less/main.less" />
-
-   <title>Bufete Notarial Valladares Guifarro</title>
-</head>
+{{> head}}
 
 <body>
    {{> header}}
@@ -23,8 +12,10 @@
          </picture>
          <a class="fondo_oscuro"></a>
          <div class="panel_contenido">
-            <h1>Asesoría legal de confianza para todas tus necesidades jurídicas</h1>
-            <a class="frase">Con más de 10 años de experiencia, brindamos soluciones legales rápidas y efectivas.</a>
+            {{> estilo_panel_1
+            panel_1 = inicio
+            }}
+
             {{> boton
             btnCollection=btn_cita_inicio
             }}
