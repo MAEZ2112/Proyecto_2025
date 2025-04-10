@@ -61,6 +61,7 @@ export const getPageContext = (pagePath) => {
         ...head,
         ...panel_1,
         ...panel_2,
+        ...headerData,
     }
 }
 
@@ -222,3 +223,40 @@ const panel_2 = {
         },        
     ],
 }
+
+
+export const headerData = {
+    logoSrc: "/logos/LOGO VALLADARES GUIFARRO fondo azul, estilo blanco.png",
+    logoTexto: "VALLADARES GUIFARRO",
+    link: [
+      { href: "/index.html", texto: "Inicio" },
+      {
+        dropdown: true,
+        titulo: "Servicios",
+        opciones: [
+          { href: "/main/servicios/servicios.html", texto: "Nuestros Servicios", icon: "ri-service-line" },
+          { href: "/main/recursos_legales/requisitos.html", texto: "Requisitos", icon: "ri-task-line" },
+        ],
+      },
+      {
+        dropdown: true,
+        titulo: "Nosotros",
+        opciones: [
+          { href: "/main/sobre_nosotros/nosotros.html", texto: "¿Quienes Somos?", icon: "ri-information-line" },
+          { href: "/main/testimonios/testimonios.html", texto: "Casos Ad Honorem", icon: "ri-bard-line" },
+          { href: "/main/equipo/equipo.html", texto: "Equipo", icon: "ri-group-line" },
+        ],
+      },
+      {
+        dropdown: true,
+        titulo: "Recursos",
+        opciones: [
+          { href: "/main/recursos_legales/requisitos.html", texto: "Recursos Legales", icon: "ri-file-line" },
+          { href: "/main/blog/blog.html", texto: "Blog de Noticias", icon: "ri-news-line" },
+          { href: "/main/preguntas_frecuentes/faq.html", texto: "Preguntas Frecuentes", icon: "ri-question-answer-line" },
+        ],
+      },
+      { href: "/main/contactenos/contactenos.html", texto: "Contacto" },
+      { href: "/main/agendar_cita/agendar_cita.html", texto: "Agenda Cita" },
+    ]
+  };

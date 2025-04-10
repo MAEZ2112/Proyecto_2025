@@ -22,7 +22,7 @@ export const equipoPage = {
 
     cartas_equipo: [
         {
-            imgSrc: 'img/imagen_integrante_1.jpg',
+            imgSrc: '/img/imagen_integrante_1.jpg',
             imgDsc: 'imagen_integrante',
             nombre: 'Vanessa Marlene Quiroz Meza',
             items: [
@@ -32,7 +32,7 @@ export const equipoPage = {
             ],
         },
         {
-            imgSrc: 'img/imagen_integrante_2.jpg',
+            imgSrc: '/img/imagen_integrante_2.jpg',
             imgDsc: 'imagen_integrante',
             nombre: 'Mirian Noemi Gómez',
             items: [
@@ -42,7 +42,7 @@ export const equipoPage = {
             ],
         },
         {
-            imgSrc: 'img/imagen_integrante_3.jpg',
+            imgSrc: '/img/imagen_integrante_3.jpg',
             imgDsc: 'imagen_integrante',
             nombre: 'Marlon Javier Meza Santos',
             items: [
@@ -52,7 +52,7 @@ export const equipoPage = {
             ],
         },
         {
-            imgSrc: 'img/imagen_integrante_4.jpg',
+            imgSrc: '/img/imagen_integrante_4.jpg',
             imgDsc: 'imagen_integrante',
             nombre: 'Rubén Antonio Valladares Guifarro',
             items: [
@@ -62,7 +62,7 @@ export const equipoPage = {
             ],
         },
         {
-            imgSrc: 'img/imagen_integrante_5.jpg',
+            imgSrc: '/img/imagen_integrante_5.jpg',
             imgDsc: 'imagen_integrante',
             nombre: 'Isaura María Ayala Paz',
             items: [
@@ -72,7 +72,7 @@ export const equipoPage = {
             ],
         },
         {
-            imgSrc: 'img/imagen_integrante_6.jpg',
+            imgSrc: '/img/imagen_integrante_6.jpg',
             imgDsc: 'imagen_integrante',
             nombre: 'Colaboradores auxiliares de firma',
             items: [
