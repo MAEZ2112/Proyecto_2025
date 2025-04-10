@@ -261,7 +261,7 @@ export const headerData = {
     ],
 
     link_general: [
-        { href: "index.html", texto: "Inicio" },
+        { href: "../../index.html", texto: "Inicio" },
         {
           dropdown: true,
           titulo: "Servicios",
