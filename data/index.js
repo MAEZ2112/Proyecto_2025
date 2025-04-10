@@ -234,29 +234,29 @@ export const headerData = {
         dropdown: true,
         titulo: "Servicios",
         opciones: [
-          { href: "/main/servicios/servicios.html", texto: "Nuestros Servicios", icon: "ri-service-line" },
-          { href: "/main/recursos_legales/requisitos.html", texto: "Requisitos", icon: "ri-task-line" },
+          { href: "Proyecto_2025/main/servicios/servicios.html", texto: "Nuestros Servicios", icon: "ri-service-line" },
+          { href: "Proyecto_2025/main/recursos_legales/requisitos.html", texto: "Requisitos", icon: "ri-task-line" },
         ],
       },
       {
         dropdown: true,
         titulo: "Nosotros",
         opciones: [
-          { href: "/main/sobre_nosotros/nosotros.html", texto: "¿Quienes Somos?", icon: "ri-information-line" },
-          { href: "/main/testimonios/testimonios.html", texto: "Casos Ad Honorem", icon: "ri-bard-line" },
-          { href: "/main/equipo/equipo.html", texto: "Equipo", icon: "ri-group-line" },
+          { href: "Proyecto_2025/main/sobre_nosotros/nosotros.html", texto: "¿Quienes Somos?", icon: "ri-information-line" },
+          { href: "Proyecto_2025/main/testimonios/testimonios.html", texto: "Casos Ad Honorem", icon: "ri-bard-line" },
+          { href: "Proyecto_2025/main/equipo/equipo.html", texto: "Equipo", icon: "ri-group-line" },
         ],
       },
       {
         dropdown: true,
         titulo: "Recursos",
         opciones: [
-          { href: "/main/recursos_legales/requisitos.html", texto: "Recursos Legales", icon: "ri-file-line" },
-          { href: "/main/blog/blog.html", texto: "Blog de Noticias", icon: "ri-news-line" },
-          { href: "/main/preguntas_frecuentes/faq.html", texto: "Preguntas Frecuentes", icon: "ri-question-answer-line" },
+          { href: "Proyecto_2025/main/recursos_legales/requisitos.html", texto: "Recursos Legales", icon: "ri-file-line" },
+          { href: "Proyecto_2025/main/blog/blog.html", texto: "Blog de Noticias", icon: "ri-news-line" },
+          { href: "Proyecto_2025/main/preguntas_frecuentes/faq.html", texto: "Preguntas Frecuentes", icon: "ri-question-answer-line" },
         ],
       },
-      { href: "/main/contactenos/contactenos.html", texto: "Contacto" },
-      { href: "/main/agendar_cita/agendar_cita.html", texto: "Agenda Cita" },
+      { href: "Proyecto_2025/main/contactenos/contactenos.html", texto: "Contacto" },
+      { href: "Proyecto_2025/main/agendar_cita/agendar_cita.html", texto: "Agenda Cita" },
     ]
   };
