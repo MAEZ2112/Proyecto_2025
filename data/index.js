@@ -78,7 +78,7 @@ const docsUrl = {
             pdfDesc: "INFORMACION AD-PERPETUAM",
         },
         {
-            pdf_ruta: "/recursos/requisitos/CONSTITUCIÓN DE COMERCIANTE INDIVIDUAL.pdf",
+            pdf_ruta: "/Proyecto_2025/recursos/requisitos/CONSTITUCIÓN DE COMERCIANTE INDIVIDUAL.pdf",
             pdfDesc: "CONSTITUCIÓN DE COMERCIANTE INDIVIDUAL",
         },
         {
