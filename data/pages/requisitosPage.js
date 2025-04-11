@@ -5,7 +5,7 @@ export const requisitosPage = {
             pdfDesc: "MATRIMONIO CIVIL",
         },
         {
-            pdf_ruta: "INFORMACIÓN AD-PERPETUAM.pdf",
+            pdf_ruta: "/INFORMACIÓN AD-PERPETUAM.pdf",
             pdfDesc: "INFORMACION AD-PERPETUAM",
         },
         {
