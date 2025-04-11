@@ -86,7 +86,7 @@ const docsUrl = {
             pdfDesc: "ESCRITURA DE COMPRAVENTA",
         },
         {
-            pdf_ruta: "../../recursos/requisitos/DIVORCIO POR MUTUO CONSENTIMIENTO.pdf",
+            pdf_ruta: "././recursos/requisitos/DIVORCIO POR MUTUO CONSENTIMIENTO.pdf",
             pdfDesc: "DIVORCIO POR MUTUO CONSENTIMIENTO",
         },
         {
