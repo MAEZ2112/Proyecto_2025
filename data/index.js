@@ -63,7 +63,14 @@ export const getPageContext = (pagePath) => {
         ...panel_1,
         ...panel_2,
         ...headerData,
+        ...docsUrl,
     }
+}
+
+const docsUrl = {
+    requisitosUrl: "/Proyecto_2025/recursos/requisitos/",
+    recursosUrl: "/Proyecto_2025/recursos/",
+    recursosLegalesUrl: "/Proyecto_2025/main/recursos_legales/requisitos.html",
 }
 
 const footer = {
