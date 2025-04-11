@@ -70,7 +70,7 @@ export const getPageContext = (pagePath) => {
 const docsUrl = {
     recursos: [
         {
-            pdf_ruta: "/recursos/requisitos/MATRIMONIO CIVIL.pdf",
+            pdf_ruta: "recursos/requisitos/MATRIMONIO CIVIL.pdf",
             pdfDesc: "MATRIMONIO CIVIL",
         },
         {
