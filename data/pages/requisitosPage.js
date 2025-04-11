@@ -1,7 +1,7 @@
 export const requisitosPage = {
     recursos: [
         {
-            pdf_ruta: "recursos/requisitos/INFORMACIÓN AD-PERPETUAM.pdf",
+            pdf_ruta: new URL('/recursos/requisitos/INFORMACIÓN AD-PERPETUAM.pdf', import.meta.url).pathname,
             pdfDesc: "Matrimonio Civil",
         },
         {
