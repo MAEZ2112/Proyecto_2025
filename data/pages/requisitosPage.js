@@ -1,7 +1,7 @@
 export const requisitosPage = {
     recursos: [
         {
-            pdf_ruta: "/public/MATRIMONIO CIVIL.pdf",
+            pdf_ruta: "/Proyecto_2025/public/MATRIMONIO CIVIL.pdf",
             pdfDesc: "Matrimonio Civil",
         },
         {
