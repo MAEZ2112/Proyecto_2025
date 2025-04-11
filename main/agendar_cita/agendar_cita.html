@@ -1,33 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--=============== REMIXICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!--=============== LESS ===============-->
-    <link rel="stylesheet" href="../../less/main.less" />
-
-    <title>Bufete Notarial Valladares Guifarro</title>
-</head>
+{{> head
+links = links
+}}
 
 <body>
-    {{> header}}
+    {{> header
+    link = link_general
+    }}
     <!--=============== MAIN ===============-->
     <main>
         <section class="cita">
             <picture>
-                <img src="img/IMAGEN_FONDO_AGENDAR.jpg" alt="Fondo">
+                <img src="/img/IMAGEN_FONDO_AGENDAR.jpg" alt="Fondo">
             </picture>
             <a class="fondo_oscuro"></a>
             <div class="cita_titulo">
-                <h1>¡Agenda tu cita!</h1>
-                <a class="frase">Estamos aqui para ayudarte con tus tramites legales y notariales.
-                    Reserva tu cita en unos minutos y recibe una atención personalizada.
-                </a>
+                {{> estilo_panel_1
+                panel_1 = agendar_cita
+                }}
             </div>
         </section>
 
@@ -37,31 +28,7 @@
             </a>
             <div class="formulario">
                 <h2>Formulario</h2>
-                <form action="main/agendar_cita/agendar_cita.html" method="GET">
-                    <label for="txt_Nombre">Nombre completo</label>
-                    <input id="txt_Nombre" name="txt_Nombre" type="text" placeholder="Nombre Completo" />
-
-                    <label for="txt_Email">Correo electrónico</label>
-                    <input id="txt_Email" name="txt_Email" type="email" placeholder="correo@gmail.com" />
-
-                    <label for="txt_Number">Número telefónico</label>
-                    <input id="txt_Numero" name="txt_Numero" type="number" placeholder="#### ####" />
-
-                    <label for="cmb_servicios">Servicios</label>
-                    <select name="cmb_servicio" id="cmbservicio">
-                        <option value="OPC1" selected>Autenticación de documentos</option>
-                        <option value="OPC2">Redacción y otorgamiento de escrituras públicas</option>
-                        <option value="OPC3">Elaboración de testamentos</option>
-                        <option value="OPC4">Donaciones</option>
-                        <option value="OPC5">Actas notariales</option>
-                        <option value="OPC6">Constitución de hipotecas</option>
-                    </select>
-
-                    <label for="txt_Long_Text">Mensaje opcional</label>
-                    <textarea name="txtmensaje" id="txtLongText"
-                        placeholder="Escribe aquí cualquier información personal que debamos saber antes de la cita..."></textarea>
-                    <button type="submit" name="btnEnviar">Enviar</button>
-                </form>
+                {{> formulario_cita}}
             </div>
             {{> contacto_servicio
             servContCollection=servicio_contacto
@@ -69,10 +36,13 @@
         </section>
         {{> btn_top}}
     </main>
-    {{> footer}}
+    {{> footer
+    navigation = navigation_2
+    }}
     <!--=============== MAIN JS ===============-->
-    <script type="module" src="/src/Scripts/agendar_cita.js"></script>
     <script type="module" src="/src/Scripts/main.js"></script>
+    <script type="module" src="/src/Scripts/agendar_cita.js"></script>
+
 </body>
 
 </html>

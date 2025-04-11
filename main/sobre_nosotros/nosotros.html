@@ -1,34 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   <!--=============== REMIXICONS ===============-->
-   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-   <!--=============== LESS ===============-->
-   <link rel="stylesheet" href="../../less/main.less" />
-   <title>Bufete Notarial Valladares Guifarro</title>
-</head>
+{{> head
+links = links
+}}
 
 <body>
-   {{> header}}
+   {{> header
+   link = link_general
+   }}
    <!--=============== MAIN ===============-->
    <main>
       <section class="about">
          <div class="main-aboutus">
-            <img src="img/IMAGEN_PAG-NOSOTROS.jpg" alt="Ubicación Bufete Notarial">
+            <img src="/img/IMAGEN_PAG-NOSOTROS.jpg" alt="Ubicación Bufete Notarial">
             <div class="about-text">
-               <h1>¿Quiénes Somos?</h1>
-               <p>
-                  En nuestro bufete notarial, ofrecemos servicios legales y notariales con un compromiso inquebrantable
-                  hacia la ética,
-                  la transparencia y la excelencia. Con años de experiencia y un enfoque personalizado,
-                  garantizamos soluciones jurídicas confiables que protegen los intereses y derechos de nuestros
-                  clientes.
-               </p>
+               {{>estilo_panel_2
+               panel_2 = nosotros
+               }}
             </div>
          </div>
       </section>
@@ -55,7 +44,7 @@
                </div>
             </div>
             <div class="about-right">
-               <img src="../img/IMAGEN2_PAG-NOSOTROS.jpg" alt="Notario Jose Valladares Guifarro" class="about-image">
+               <img src="/img/IMAGEN2_PAG-NOSOTROS.jpg" alt="Notario Jose Valladares Guifarro" class="about-image">
             </div>
          </div>
       </section>
@@ -64,9 +53,10 @@
 
       {{> btn_top}}
    </main>
-   {{> footer}}
+   {{> footer
+   navigation = navigation_2
+   }}
    <!--=============== MAIN JS ===============-->
-   <base href="/proyecto_web">
    <script type="module" src="/src/Scripts/main.js"></script>
 </body>
 

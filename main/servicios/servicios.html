@@ -2,37 +2,15 @@
 
 <html lang="en">
 
-
-
-<head>
-
-   <meta charset="utf-8" />
-
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-
-   <!--=============== REMIXICONS ===============-->
-
-   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-
-
-   <!--=============== LESS ===============-->
-
-
-   <link rel="stylesheet" href="../../less/main.less" />
-
-
-   <title>Bufete Notarial Valladares Guifarro</title>
-
-</head>
-
-
+{{> head
+links = links
+}}
 
 <body>
 
-   {{> header}}
+   {{> header
+   link = link_general
+   }}
 
    <!--=============== MAIN ===============-->
 
@@ -42,7 +20,7 @@
 
          <picture>
 
-            <img src="img/IMAGEN_FONDO_SERVICIOS.jpg" alt="Nuestros Servicios">
+            <img src="/img/IMAGEN_FONDO_SERVICIOS.jpg" alt="Nuestros Servicios">
 
          </picture>
 
@@ -147,7 +125,9 @@
 
    </main>
 
-   {{> footer}}
+   {{> footer
+   navigation = navigation_2
+   }}
 
    <!--=============== MAIN JS ===============-->
 

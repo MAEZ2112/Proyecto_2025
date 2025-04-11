@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!--=============== REMIXICONS ===============-->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-  <!--=============== LESS ===============-->
-  <link rel="stylesheet" href="../../less/main.less" />
-
-  <title>Bufete Notarial Valladares Guifarro</title>
-</head>
+{{> head
+links = links
+}}
 
 <body>
-  {{> header}}
+  {{> header
+  link = link_general
+  }}
 
   <!--=============== MAIN ===============-->
   <main>
 
     <section class="hero_blog">
       <picture>
-        <img src="img/IMAGEN_FONDO_BLOG.jpg" alt="Imagen ilustrativa de noticias justicieras">
+        <img src="/img/IMAGEN_FONDO_BLOG.jpg" alt="Imagen ilustrativa de noticias justicieras">
       </picture>
       <a class="fondo_oscuro_blog"></a>
       <div class="contenido_titulo">
-        <h1>Conoce más sobre temas legales</h1>
-        <p>
-          Explora nuestro blog y obtén información valiosa sobre procesos legales, requisitos y consejos
-          utiles para resulver tus dudas. </p>
+        {{>estilo_panel_2
+        panel_2 = blog
+        }}
       </div>
       </div>
     </section>
@@ -37,19 +29,19 @@
     <!--Sección tarjetas-->
     <section class="tarjetas_articulos">
       <h3>Artículos</h3>
-      {{> blog/articulo_blog}}
+      {{> articulo_blog}}
     </section>
 
     <section class="tarjetas_noticias">
       <h3>Noticias</h3>
-      {{> blog/noticias_blog}}
+      {{> noticias_blog}}
     </section>
 
 
     <!--Cuadro-->
     <section class="Gmail">
       <div class="rectangulo">
-        <img src="img/email_6244710.png" alt="icono de gmail">
+        <img src="/img/email_6244710.png" alt="icono de gmail">
         <p>¿Quieres mantenerte al día con temas legales importantes? Suscríbete a nuestro boletín informativo.</p>
         <input type="email" placeholder="Tucorreo@gmail.com" required />
         <button type="submit">➤</button>
@@ -59,7 +51,9 @@
     {{> btn_top}}
   </main>
 
-  {{> footer}}
+  {{> footer
+  navigation = navigation_2
+  }}
   <!--=============== MAIN JS ===============-->
   <script type="module" src="/src/Scripts/main.js"></script>
 

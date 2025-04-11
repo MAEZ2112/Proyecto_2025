@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--=============== REMIXICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!--=============== LESS ===============-->
-    <link rel="stylesheet" href="../../less/main.less" />
-
-    <title>Bufete Notarial Valladares Guifarro</title>
-</head>
+{{> head
+links = links
+}}
 
 <body>
-    {{> header}}
+    {{> header
+    link = link_general
+    }}
     <!--=============== MAIN ===============-->
     <main>
 
         <section class="hero-panel">
             <picture>
-                <img src="img/imagen_fondo_testimonios.png" alt="Testimonios de Clientes">
+                <img src="/img/imagen_fondo_testimonios.png" alt="Testimonios de Clientes">
             </picture>
             <a class="fondo_oscuro"></a>
             <div class="hero-content">
-                <h1>Casos de Exito</h1>
-                <p>En Valladares Guifarro, nos dedicamos a brindar servicios <br>
-                    legales excepcionales. Las historias de satisfacción de <br>
-                    nuestros clientes reflejan nuestro compromiso con la ley del <br>
-                    país y nuestra dedicación a ofrecer soluciones confiables y <br>
-                    efectivas para cada caso.</p>
+                {{>estilo_panel_2
+                panel_2 = testimonio
+                }}
         </section>
 
         <section class="testimonios">
@@ -61,7 +51,9 @@
 
         {{> btn_top}}
     </main>
-    {{> footer}}
+    {{> footer
+    navigation = navigation_2
+    }}
     <!--=============== MAIN JS ===============-->
     <script type="module" src="/src/Scripts/main.js"></script>
 </body>

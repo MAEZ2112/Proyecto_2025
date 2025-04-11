@@ -21,17 +21,17 @@ export const contactoPage = {
     informacion: [
         {
           tipo: "telefono",
-          icono: "phone-call_455705.png",
+          icono: "/img/phone-call_455705.png",
           descripcion: "+504 9928-6475"
         },
         {
           tipo: "Gmail",
-          icono: "email_6244710.png",
+          icono: "/img/email_6244710.png",
           descripcion: "joseluisvalladares13@gmail.com"
         },
         {
           tipo: "direccion",
-          icono: "gps_11160901.png",
+          icono: "/img/gps_11160901.png",
           descripcion: `Ciudad de Tegucigalpa, Municipio del Distrito Central, Departamento de Francisco Morazán, 
                          Honduras, Centro América; Boulevard Morazán, Torre Morazán numero uno, segundo nivel de área comercial,
                          cubículos 30504 y 30505.`,

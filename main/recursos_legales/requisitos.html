@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--=============== REMIXICONS ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!--=============== LESS ===============-->
-    <link rel="stylesheet" href="../../less/main.less" />
-
-    <title>Bufete Notarial Valladares Guifarro</title>
-</head>
+{{> head
+links = links
+}}
 
 <body>
-    {{> header}}
+    {{> header
+    link = link_general
+    }}
     <!--=============== MAIN ===============-->
     <main>
         <section class="hero-panel">
             <picture>
-                <img src="img/IMAGEN_FONDO_RECURSOS.jpg" alt="Requisitos-Recursos Legales">
+                <img src="/img/IMAGEN_FONDO_RECURSOS.jpg" alt="Requisitos-Recursos Legales">
             </picture>
             <a class="fondo_oscuro"></a>
             <div class="hero-content">
-                <h1>Recursos Legales</h1>
-                <p>Encuentra los requisitos y guías necesarias para completar tus <br>
-                    trámites legales de manera efectiva.</p>
+                {{>estilo_panel_2
+                panel_2 = requisitos
+                }}
         </section>
 
         <section class="services">
@@ -49,9 +42,10 @@
 
         {{> btn_top}}
     </main>
-    {{> footer}}
+    {{> footer
+    navigation = navigation_2
+    }}
     <!--=============== MAIN JS ===============-->
-    <base href="/proyecto_web">
     <script type="module" src="/src/Scripts/main.js"></script>
 </body>
 

@@ -1,33 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-   <!--=============== REMIXICONS ===============-->
-   <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-   <!--=============== LESS ===============-->
-   <link rel="stylesheet" href="../../less/main.less" />
-
-   <title>Bufete Notarial Valladares Guifarro</title>
-</head>
+{{> head
+links = links
+}}
 
 <body>
-   {{> header}}
+   {{> header
+   link = link_general
+   }}
    <!--=============== MAIN ===============-->
    <main>
       <section class="nuestro_equipo_trabajo">
          <h1>Conoce a Nuestro Equipo</h1>
-         <img src="img/Equipo_Trabajo.jpg" alt="imagen_equipo">
+         <img src="/img/Equipo_Trabajo.jpg" alt="imagen_equipo">
          <a>Nuestros expertos legales trabajan con dedicación para ofrecer soluciones personalizadas y efectivas</a>
       </section>
       <section class="fundador">
          <a class="titulo_fundador">FUNDADOR</a>
          <h2>José Luis Valladares</h2>
          <div class="imagen_fundador">
-            <img src="img/imagen_fundador.jpg" alt="imagen_cliente">
+            <img src="/img/imagen_fundador.jpg" alt="imagen_cliente">
             <ul class="lista_fundador">
                {{>list_fundador
                fundadorCollection=lista_fund
@@ -49,9 +42,10 @@
       </section>
       {{> btn_top}}
    </main>
-   {{> footer}}
-   <!--=============== MAIN JS ===============-->
-
+   {{> footer
+   navigation = navigation_2
+   }}
+   <!--=============== JavaScript ===============-->
    <script type="module" src="/src/Scripts/main.js"></script>
 </body>
 

@@ -1,33 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!--=============== REMIXICONS ===============-->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-
-  <!--=============== LESS ===============-->
-  <link rel="stylesheet" href="../../less/main.less" />
-
-  <title>Bufete Notarial Valladares Guifarro</title>
-</head>
+{{> head
+links = links
+}}
 
 <body>
-  {{> header}}
+  {{> header
+  link = link_general
+  }}
   <!--=============== MAIN ===============-->
   <main>
     <section class="heros">
       <picture>
-        <img src="img/IMAGEN_FONDO_PREGUNTAS.jpg" alt="Imagen ilustrativa de las leyes">
+        <img src="/img/IMAGEN_FONDO_PREGUNTAS.jpg" alt="Imagen ilustrativa de las leyes">
       </picture>
       <a class="fondo_oscuro_faq"></a>
       <div class="contenido_hero">
-        <h1>Preguntas Frecuentes</h1>
-        <p>
-          Resolvemos tus dudas sobre trámites notariales y legales.
-          Si tienes otra consulta, no dudes en contactarnos directamente. </p>
+        {{>estilo_panel_2
+        panel_2 = faq
+        }}
       </div>
       </div>
     </section>
@@ -36,19 +28,19 @@
       <div class="container_faq">
         <h3>Servicios y Costos</h3>
 
-        {{> preguntas/preg_servicio}}
+        {{> preg_servicio}}
 
         <h3>Requisitos para Trámites</h3>
 
-        {{> preguntas/preg_requi}}
+        {{> preg_requi}}
 
         <h3>Correcciones y Autorizaciones</h3>
 
-        {{> preguntas/preg_correc}}
+        {{> preg_correc}}
 
         <h3>Trámites de Donaciones y Demandas</h3>
 
-        {{> preguntas/preg_donaciones}}
+        {{> preg_donaciones}}
 
       </div>
 
@@ -58,11 +50,13 @@
 
     <!--BOTONES-->
     <section class="botones">
-      {{> preguntas/btn-items}}
+      {{> btn-items}}
     </section>
 
   </main>
-  {{> footer}}
+  {{> footer
+  navigation = navigation_2
+  }}
 
   <!--=============== MAIN JS ===============-->
   <script type="module" src="/src/Scripts/main.js"></script>

@@ -1,0 +1,18 @@
+<form action="main/agendar_cita/agendar_cita.html" method="GET">
+    {{#each txt}}
+    <label for={{nombre}}>{{contenido}}</label>
+    <input id={{nombre}} name={{nombre}} type={{type}} placeholder={{placeholder}} />
+    {{/each}}
+
+    <label for="cmb_servicios">Servicios</label>
+    <select name="cmb_servicio" id="cmbservicio">
+        <option value="OPC1" selected>Autenticación de documentos</option>
+        {{#each cmb}}
+        <option value={{value}}>{{contenido_cmb}}</option>
+        {{/each}}
+    </select>
+    <label for="txt_Long_Text">Mensaje opcional</label>
+    <textarea name="txtmensaje" id="txtLongText"
+        placeholder="Escribe aquí cualquier información personal que debamos saber antes de la cita..."></textarea>
+    <button type="submit" name="btnEnviar">Enviar</button>
+</form>
