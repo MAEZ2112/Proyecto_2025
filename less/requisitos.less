@@ -246,6 +246,11 @@
                 object-fit: cover;
 
                 @media (max-width: #breaks[tablet]) {
+                    width: 80%%;
+                    height: 200px;
+                }
+
+                @media (max-width: #breaks[mobile]) {
                     width: 100%;
                     height: 200px;
                 }
@@ -258,13 +263,24 @@
                 h3 {
                     font-size: 1.2rem;
                     margin-bottom: 0.5rem;
-                    color: var(--black-color-light)
+                    color: var(--black-color-light);
+
+                    @media (max-width: #breaks[tablet]) {
+                        font-size: 1rem;
+                        color: var(--black-color-light);
+                    }
                 }
 
                 p {
                     font-size: 0.9rem;
                     color: #555555;
+
+                    @media (max-width: #breaks[tablet]) {
+                        font-size: 0.8rem;
+                        color: #555555;
+                    }
                 }
+
             }
         }
     }
