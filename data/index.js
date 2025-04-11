@@ -82,11 +82,11 @@ const docsUrl = {
             pdfDesc: "CONSTITUCIÓN DE COMERCIANTE INDIVIDUAL",
         },
         {
-            pdf_ruta: "/recursos/requisitos/ESCRITURA DE COMPRAVENTA.pdf",
+            pdf_ruta: "../recursos/requisitos/ESCRITURA DE COMPRAVENTA.pdf",
             pdfDesc: "ESCRITURA DE COMPRAVENTA",
         },
         {
-            pdf_ruta: "/recursos/requisitos/DIVORCIO POR MUTUO CONSENTIMIENTO.pdf",
+            pdf_ruta: "../../recursos/requisitos/DIVORCIO POR MUTUO CONSENTIMIENTO.pdf",
             pdfDesc: "DIVORCIO POR MUTUO CONSENTIMIENTO",
         },
         {
