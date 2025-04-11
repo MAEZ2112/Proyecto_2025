@@ -1,7 +1,7 @@
 export const requisitosPage = {
     recursos: [
         {
-            pdf_ruta: "/Proyecto_2025/recursos/requisitos/INFORMACIÓN AD-PERPETUAM.pdf",
+            pdf_ruta: "/Proyecto_2025/recursos/requisitos/MATRIMONIO CIVIL.pdf",
             pdfDesc: "Matrimonio Civil",
         },
         {
