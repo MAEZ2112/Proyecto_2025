@@ -8,7 +8,6 @@ import { blogPage } from "./pages/blogPage.js";
 import { preguntasPage } from "./pages/preguntasPage.js";
 import { contactoPage } from "./pages/contactoPage.js";
 
-const basePath = process.env.DEPLOY_BASE_URL || '/Proyecto_2025/'
 
 export const getPageContext = (pagePath) => {
     console.log('Rendering:', pagePath);
@@ -56,7 +55,6 @@ export const getPageContext = (pagePath) => {
             break;
     }
     return {
-        base: basePath,
         ...footer,
         ...pageData,
         ...cardServicioContractanos,
